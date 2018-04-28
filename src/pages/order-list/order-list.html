@@ -1,0 +1,78 @@
+<ion-header>
+    <ion-navbar>
+      <div class="cp-img-header" >
+        <img src="https://preview.ibb.co/kAskFS/Logo_Prancheta_1.png" width="50%" >
+        <ion-fab right bottom item-end hideWhen="ios,android"><!--showWhen="ios,android">-->
+            <button ion-fab color="primary" (click)="refreshList()"><ion-icon name="refresh"></ion-icon></button>
+        </ion-fab>
+      </div>
+    
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding>
+
+    <ion-chip *ngIf="(estado !== 'Todos')" (click)="zeraFiltro1(estado)">
+        <ion-icon name="funnel" color="primary"></ion-icon>
+        <ion-label> Status Wmas:{{estado}}</ion-label>
+    </ion-chip>
+    <ion-chip *ngIf="(select_filial !== 'Todas')" (click)="zeraFiltro2(select_filial)">
+        <ion-icon name="funnel" color="primary"></ion-icon>
+        <ion-label> Filial:{{select_filial}}</ion-label>
+    </ion-chip>
+
+    <ion-chip *ngIf="((estado === 'Todos') && (select_filial === 'Todas')) ">
+        <ion-icon name="funnel" color="secondary"></ion-icon>
+        <ion-label> Sem Filtro</ion-label>
+    </ion-chip>
+
+
+    <ion-item>
+      <ion-label>Filiais</ion-label>
+      <ion-select [(ngModel)]="select_filial">  <!-- (ionChange)="onFilialChange($event)"-->
+        <ion-option value={{filial}} *ngFor="let filial of filiais1" >{{filial}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <!-- <!--</ion-segment> (ionChange)="onEstadoChange($event)">-->
+      <div padding>
+          <ion-segment [(ngModel)]="estado" id="estado"> 
+            <ion-segment-button value="Previsto" >
+                Previsto
+            </ion-segment-button>
+            <ion-segment-button value="Pendente">
+                Pendente
+            </ion-segment-button>
+            <ion-segment-button value="Todos">
+                Todos
+            </ion-segment-button>
+          </ion-segment>
+        </div>
+      -
+    <ion-list>
+      <!-- <ion-item-sliding ng-repeat="order in orders" > aqui  mesmo :(--> 
+      <ion-item-sliding *ngFor="let order of orders">
+        <ion-item class="my=list" large *ngIf="(estado==='Todos' || estado===order.status_wmas) && (select_filial==='Todas' || select_filial===order.filial_entrega) ">
+          <ion-grid>
+            <ion-row>
+                  <ion-col col-8>
+                    <p><b>{{ order.pedido }} </b> {{ order.filial_entrega }}</p>
+                  </ion-col>
+                  <ion-col col-4>
+                    <p><ion-badge [color]="changeColor(order.status_wmas)">{{order.status_wmas}} </ion-badge>  </p>
+                  </ion-col>
+            </ion-row>
+          </ion-grid>
+         <ion-icon (click)="presentModal(order)" name="menu" class="my-icon" large item-end></ion-icon>
+        </ion-item>
+      </ion-item-sliding>
+
+    </ion-list>
+  
+    <ion-infinite-scroll (ionInfinite)="getOrders($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Aguarde...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  
+    <ion-fab right bottom showWhen="ios,android">
+      <button ion-fab color="primary" (click)="refreshList()"><ion-icon name="refresh"></ion-icon></button>
+    </ion-fab>
+  </ion-content>

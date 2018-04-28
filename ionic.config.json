@@ -1,6 +1,6 @@
 {
-  "name": "cp01",
-  "app_id": "",
+  "name": "Casas Pedro ",
+  "app_id": "br.com.casaspedrowms",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

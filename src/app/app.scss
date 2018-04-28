@@ -14,3 +14,22 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+page-home {
+    background-image: url()
+}
+
+.my-list {
+    padding-top: 50px;
+    margin-top: 0px;
+}
+.cp-img-header{
+    max-width: 30px;
+    text-align: left;
+    padding-top: 7px;    
+    
+}
+.img-head{
+    align-content: center;
+    text-align: center;
+}

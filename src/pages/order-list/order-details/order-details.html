@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>
+            <h2 hideWhen="ios,android"><b>Pedido:   </b>{{order.pedido}} </h2> 
+      </ion-title>
+      <ion-buttons start>
+        <button ion-button (click)="dismiss()">
+          <span ion-text color="primary" showWhen="ios">Voltar</span>
+          <ion-icon name="md-close" hideWhen="ios"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+        <ion-item>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-5>
+                        <h2><b>Pedido:   </b>{{order.pedido}}        </h2> 
+                    </ion-col>
+                    <ion-col col-1>
+                    </ion-col>
+                    <ion-col col-5>
+                            <h3><b>Destino:   </b>{{order.filial_entrega}}        </h3> 
+                    </ion-col>
+                 </ion-row>
+                 <ion-row>
+                        <ion-col col-5>
+                            <h3><b>Status:   </b>{{ order.status_wmas}}        </h3> 
+                        </ion-col>
+                        <ion-col col-4>
+                                <h3><b>Nº Itens:   </b>{{order.quantidade_retaguarda}}        </h3> 
+                        </ion-col>
+                        <ion-col col-3>
+                                <h3><b>Hora:   </b>{{order.hora_integracao_retaguarda}}        </h3> 
+                        </ion-col>
+                     </ion-row>     
+            </ion-grid>
+        </ion-item>
+        <ion-item *ngFor="let item of order['itens']">
+          
+         <!-- <ion-note item-end>-->
+              <ion-grid>
+                <ion-row>
+                    <ion-col col-5>
+                        <p> Pedido : {{item.quantidade_pedido}}</p>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-5>
+                         <p> Separado : {{item.quantidade_separada}} </p>
+                    </ion-col>  
+                </ion-row>
+                <ion-row>
+                    <h2>{{item.descricao}}</h2>
+                </ion-row>
+             </ion-grid>
+          <!-- </ion-note>-->
+        </ion-item>
+    </ion-list>
+  </ion-content>
+
+  <!--  <ion-grid>
+                <ion-row>
+                    <ion-col col-2>
+                        <p>{{item.descricao}}</p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>-->
