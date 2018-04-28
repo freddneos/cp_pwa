@@ -1,5 +1,5 @@
 ### By Frederico Bezerra :eyeglasses:
-# [:link: Linkedin](https://www.linkedin.com/in/fredericobezerra ) [:link: GitHub](https://github.com/freddneos)
+### [:link: Linkedin](https://www.linkedin.com/in/fredericobezerra ) [:link: GitHub](https://github.com/freddneos)
 
 
 # Simple Ionic PWA :globe_with_meridians:
