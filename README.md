@@ -1,9 +1,9 @@
-### By Frederico Bezerra :smile:
-# [:fa-linkedin:](https://www.linkedin.com/in/fredericobezerra ) [:fa-github:](https://github.com/freddneos)
+### By Frederico Bezerra :eyeglasses:
+# [:link:](https://www.linkedin.com/in/fredericobezerra ) [:link:](https://github.com/freddneos)
 
 
-# Simple Ionic PWA
-###  :tw-1f1fa-1f1f8:  Description
+# Simple Ionic PWA :globe_with_meridians:
+###  en-US  Description
 
 In this project I shared the code of my mobile application made in ionic to generate a PWA that monitors the integration between the WMAS-Store system and Totvs Protheus ERP.
 
@@ -42,13 +42,13 @@ Soon I will upload the backend done in[ AdvPl (Clipper)](https://en.wikipedia.or
 
 ![](http://www.neosdev.com.br/img/portifolio/cpwms/webappCasaspedro_wms.png "Dashboard - PWA")
 
-##Mobile preview (image)
+## Mobile preview (image)
 ![](http://www.neosdev.com.br/img/portifolio/cpwms/appCasaspedro_wms.png "Dashboard - PWA")
 
 
 
-## Very usefull Tip :tw-1f60e:
-####Follow these steps to transform you Ionic app in a PWA
+## Very usefull Tip :gem:
+#### Follow these steps to transform you Ionic app in a PWA
 
 go into src/index.html and find the below commented out script that enables the service worker and uncomment it:
 ```javascript
@@ -60,7 +60,7 @@ go into src/index.html and find the below commented out script that enables the 
   }
 </script>
 ```
-Now you mobile app is ready to be deployed like a PWA :tw-1f44f:   :tw-1f44f:
+Now you mobile app is ready to be deployed like a PWA :clap::clap:
 
 ### Thank you and 
 if you want to more about me contact me on linkedin and follow my repos!
