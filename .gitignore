@@ -25,7 +25,7 @@ temp/
 hooks/
 platforms/
 plugins/
-app/variables.ts
+src/app/variables.ts
 plugins/android.json
 plugins/ios.json
 www/
