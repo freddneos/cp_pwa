@@ -1,5 +1,5 @@
 ### By Frederico Bezerra :eyeglasses:
-# [:link:](https://www.linkedin.com/in/fredericobezerra ) [:link:](https://github.com/freddneos)
+# [:link: Linkedin](https://www.linkedin.com/in/fredericobezerra ) [:link: GitHub](https://github.com/freddneos)
 
 
 # Simple Ionic PWA :globe_with_meridians:
@@ -62,6 +62,6 @@ go into src/index.html and find the below commented out script that enables the 
 ```
 Now you mobile app is ready to be deployed like a PWA :clap::clap:
 
-### Thank you and 
-if you want to more about me contact me on linkedin and follow my repos!
+### Thank you and ...
+...if you want to more about me contact me on linkedin and follow my repos!
 
