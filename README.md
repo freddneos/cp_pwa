@@ -40,10 +40,10 @@ Soon I will upload the backend done in[ AdvPl (Clipper)](https://en.wikipedia.or
 ```
 ##Dashboard preview (image)
 
-![Dashboard - PWA](http://www.neosdev.com.br/img/portifolio/cpwms/webappCasaspedro_wms.png "Dashboard - PWA")
+![](http://www.neosdev.com.br/img/portifolio/cpwms/webappCasaspedro_wms.png "Dashboard - PWA")
 
 ##Mobile preview (image)
-![Dashboard - Mobile](http://www.neosdev.com.br/img/portifolio/cpwms/appCasaspedro_wms.png "Dashboard - PWA")
+![](http://www.neosdev.com.br/img/portifolio/cpwms/appCasaspedro_wms.png "Dashboard - PWA")
 
 
 
