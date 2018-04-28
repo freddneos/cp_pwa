@@ -1,4 +1,4 @@
-###By Frederico Bezerra :tw-1f453:
+###By Frederico Bezerra :smile:
 #[:fa-linkedin:](https://www.linkedin.com/in/fredericobezerra ) [:fa-github:](https://github.com/freddneos)
 
 
